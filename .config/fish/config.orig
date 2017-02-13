@@ -1,0 +1,39 @@
+alias l='ls -lGh'
+alias ll='l'
+alias e='emacs'
+alias la='l -a'
+alias cl='clean'
+alias rm='rm -v'
+alias mv='mv -v'
+alias g='grep'
+alias reload='source ~/.config/fish/config.fish'
+alias clean='rm `find . -name "*~"`'
+alias qm3k-merging='echo root@qm3k-merging-1.vpn.quanta.gr'
+alias ssh_qm3k-merging='ssh `qm3k-merging`'
+alias slow_connection='bash ~/.slow_connection'
+alias reset_connection='sudo ipfw delete 1'
+alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias push_qm3k='bash ~/.push_qm3k.sh'
+alias ssh='ssh -o TCPKeepAlive=yes -o ServerAliveCountMax=5 -o ServerAliveInterval=5 -c blowfish -A'
+
+setenv GOPATH $HOME/go
+setenv PYTHONPATH $PYTHONPATH /usr/local/bin/bzr
+setenv PYTHONPATH /usr/local/lib/python2.6/site-packages
+
+setenv PATH $PATH $HOME/.rvm/bin # Add RVM to PATH for scripting
+setenv PATH $PATH $GOPATH/bin
+setenv PATH $PATH /usr/local/sbin
+
+setenv LSCOLORS gxfxcxdxcxegedabagacad
+setenv EDITOR /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl
+
+setenv QM3K_ZBX_HOST_TEST '10.0.1.198'
+setenv QM3K_ZBX_API_TEST 'http://10.0.1.198/zabbix/api_jsonrpc.php'
+
+setenv CC /usr/local/bin/gcc-4.2
+
+function fish_prompt
+	set_color purple
+	echo -n $USER '$ '
+	set_color normal
+end

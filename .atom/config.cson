@@ -1,0 +1,41 @@
+"*":
+  "atom-material-ui":
+    depth: true
+    tabs:
+      compactTabs: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  core:
+    disabledPackages: [
+      "auto-replace-in-selection"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    fontSize: 18
+    invisibles: {}
+    preferredLineLength: 100
+    showIndentGuide: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "f5d3da89-1173-be82-421f-dbddac2cadf9"
+  linter:
+    showErrorPanel: false
+  metrics:
+    userId: "4c3ed450a445202d4096c78735ca9df1c8861cf3"
+  minimap: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  "white-cursor":
+    darkThemes: [
+      "[atom-dark]"
+    ]
