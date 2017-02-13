@@ -1,0 +1,34 @@
+[color]
+	diff = auto
+	branch = auto
+	status = auto
+
+[user]
+	name = Kraoz
+	email = main.kraoz@gmail.com
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	p = push
+  di = diff -D
+
+[core]
+	editor = emacs
+  mergeoptions = --no-edit
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[push]
+	default = current
+
+[diff "nodiff"]
+  command = /usr/bin/true
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
